@@ -172,7 +172,7 @@ function KickPlayerFromRoom (socketRoom, nPlayerIndex)
 
     let playerSocketId = mapValue.players[nPlayerIndex].socketId;
     let playerSocket = io.sockets.connected[playerSocketId];
-    LeaveRoom (playerSocket, "You have been kicked from the room");
+    LeaveRoom (playerSocket, "部屋から追放されました");
 }
 
 function LeaveRoom (socket, strOptionalMsgIndividual) {
@@ -208,7 +208,7 @@ function LeaveRoom (socket, strOptionalMsgIndividual) {
     if (index === 0)
     {
         //The host of the game left... Disconnect everyone and leave the room
-        socket.to(roomCode).emit ("m_LeaveRoom", "Host disconnected or left the room");
+        socket.to(roomCode).emit ("m_LeaveRoom", "ホストによる切断またはホストが部屋から抜けた可能性があります");
         socket.emit("m_LeaveRoom", "");
 
         for (let i = 0; i < mapValue.count; i++)
@@ -334,7 +334,7 @@ function JoinRoom (socket, strRoomCode, strPlayerName) {
     if (mapGameRunningValue && mapGameRunningValue.count >= nMaxPlayersPerRoom)
     {
         Log (LogTrace, "Room " + strRoomCode + " is full");
-        socket.emit ("m_JoinRoomFail", "Room is full");
+        socket.emit ("m_JoinRoomFail", "この部屋は満員です");
         return;
     }
 
