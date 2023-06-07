@@ -57,7 +57,7 @@ socket.on("connect", () => {
 });
 
 socket.on("disconnect", () => {
-    UGi_DisplayError ("You disconnected from the room");
+    UGi_DisplayError ("あなたは部屋から切断された");
     console.log ("Disconnected");
     ug_bPlayerDisconnected = true;
 });
@@ -161,11 +161,11 @@ socket.on ("g_UpdateScoreBoard_ShowBtn", (strPlayerWonName) => {
     ug_strPlayerHasWon = strPlayerWonName;
     if (strPlayerWonName == "")
     {
-        scoreBoardNextRoundBtn.querySelector("p").textContent = "Next Round"; 
+        scoreBoardNextRoundBtn.querySelector("p").textContent = "次のラウンドの開始"; 
     }
     else
     {
-        scoreBoardNextRoundBtn.querySelector("p").textContent = "Main Menu"; 
+        scoreBoardNextRoundBtn.querySelector("p").textContent = "メインメニュー"; 
     }
 });
 
