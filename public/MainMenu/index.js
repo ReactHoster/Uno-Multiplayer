@@ -74,7 +74,7 @@ e_createRoomBtn.addEventListener ('click', () => {
         if (!bCanClickMainMenuBtns) return;
 
         e_enterName_error.style.display = "none"; //disable the error message
-    e_enterName_dlgTitle.textContent = "Create A Room"
+    e_enterName_dlgTitle.textContent = "部屋の作成"
     //Show the pop up to enter a name
     e_enterNameDlg.style.display = "flex";
     e_enterName_codeField.style.display = "none"; //Dont display the enter code field
@@ -88,7 +88,7 @@ e_createRoomBtn.addEventListener ('click', () => {
 e_joinRoomBtn.addEventListener ('click', () => {
     if (!bCanClickMainMenuBtns) return;
     e_enterName_error.style.display = "none"; //disable the error message
-    e_enterName_dlgTitle.textContent = "Join A Room"
+    e_enterName_dlgTitle.textContent = "部屋に参加"
     e_enterNameDlg.style.display = "flex";
     e_enterName_codeField.style.display = "flex"; //Dont display the enter code field
     e_enterName_nameField.style.display = "flex";
