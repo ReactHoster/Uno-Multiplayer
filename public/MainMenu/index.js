@@ -23,7 +23,7 @@ socket.on("disconnect", () => {
     bDisconnected = true;
     if (!bRedirecting)
     {
-        ShowErrorMessage ("You have been disconnected. Please try again");
+        ShowErrorMessage ("サーバーから切断されました。もう一度試してください");
     }
 })
 
