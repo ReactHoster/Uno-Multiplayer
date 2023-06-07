@@ -68,7 +68,7 @@ module.exports.PlayerCanJoinRoomMidway = function (bJoinStatus, strCacheId)
 
     if (!bJoinStatus)
     {
-        io.to(cache.socketId).emit ("m_JoinRoomFail", "Host did not accept");
+        io.to(cache.socketId).emit ("m_JoinRoomFail", "ホストが許可していません");
     }
     else
     {
@@ -321,7 +321,7 @@ function JoinRoom (socket, strRoomCode, strPlayerName) {
     if (!mapValue && !mapGameRunningValue)
     {
         Log (LogTrace, "Room " + strRoomCode + " does not exist");
-        socket.emit ("m_JoinRoomFail", "Room does not exist");
+        socket.emit ("m_JoinRoomFail", "部屋が存在しません - 部屋コードをもう一度ご確認ください");
         return;
     }
 
