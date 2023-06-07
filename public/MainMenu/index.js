@@ -111,7 +111,7 @@ e_enterName_submitBtn.addEventListener ('click', () => {
     const strCode = document.getElementById ('enterName_CodeField').value;
 
     if (strName == "") {
-        e_enterName_error.textContent = "Error: Name field cannot be empty";
+        e_enterName_error.textContent = "エラー: 名前フィールドは空にできません";
         e_enterName_error.style.display = "flex";
         return;
     }
@@ -119,13 +119,13 @@ e_enterName_submitBtn.addEventListener ('click', () => {
     if (nEnterNameDlgState === StateEnterName_JoinRoom)  {
         if (strCode == "")
         {
-            e_enterName_error.textContent = "Error: Code field cannot be empty";
+            e_enterName_error.textContent = "エラー: コードフィールドは空にできません";
             e_enterName_error.style.display = "flex";
             return;
         }
         else if (strCode.length !== 4)
         {
-            e_enterName_error.textContent = "Error: Room code has to be 4 characters";
+            e_enterName_error.textContent = "エラー: 部屋コードは4文字である必要があります";
             e_enterName_error.style.display = "flex";
             return;
         }
@@ -173,7 +173,7 @@ function ShowErrorMessage (strMessage) {
         
         e_enterName_error.style.display = "flex";
         e_enterName_error.textContent=strMessage;
-        e_enterName_dlgTitle.textContent = "Error Message"
+        e_enterName_dlgTitle.textContent = "エラー"
     }
 }
 
