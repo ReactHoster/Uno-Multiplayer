@@ -116,7 +116,7 @@ function UC_HighlightPlayerCtn (ePlayer, bHighlight)
     
     if (bHighlight)
     {
-        mainCtn.style.boxShadow = "0px 0px 45px 10px #ff5555";
+        mainCtn.style.boxShadow = "0px 0px 45px 10px #3333ff";
     }
     else
     {
