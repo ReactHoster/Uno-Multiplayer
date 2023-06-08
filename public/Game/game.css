@@ -24,12 +24,12 @@ main {
     align-items: center;
     justify-content: center;
 
-    height: 100vh;
+    height: 98vh;
 }
 
 .main {
     background-color: #e68a00;    
-    height: 82%;
+    height: 83%;
     width: 98%;
     position: relative;
 }
