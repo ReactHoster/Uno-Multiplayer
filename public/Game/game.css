@@ -29,7 +29,7 @@ main {
 
 .main {
     background-color: #e68a00;    
-    height: 87%;
+    height: 85%;
     width: 98%;
     position: relative;
 }
@@ -192,7 +192,7 @@ section.middle {
     color: #efefef;
     font-weight: normal;
     font-family: 'Merienda', cursive;
-    font-size: 22px;
+    font-size: 20px;
     display: none;
 }
 
