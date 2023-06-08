@@ -60,7 +60,7 @@ section.down {
     width: 100%;
     height: var(--section-bottom-height);
     
-    padding-bottom: 1rem;
+    padding-bottom: 0%;
     padding-left: 10%;
     padding-right: 10%;
 }
