@@ -29,7 +29,7 @@ main {
 
 .main {
     background-color: #e68a00;    
-    height: 50%;
+    height: 90%;
     width: 98%;
     position: relative;
 }
@@ -180,7 +180,7 @@ section.middle {
     font-size: 40px;
     font-family: 'Merienda', cursive;
     display: none;
-    margin: 0rem 0.4rem; 
+    margin: 0rem 0.5rem; 
 }
 
 .playerCtnHor p, .playerCtnVer p {
