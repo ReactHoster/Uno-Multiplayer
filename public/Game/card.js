@@ -120,8 +120,7 @@ function UC_HighlightPlayerCtn (ePlayer, bHighlight)
     }
     else
     {
-        //mainCtn.style.boxShadow = "none";
-        mainCtn.style.boxShadow = "0px 0px 45px 10px #000000";
+        mainCtn.style.boxShadow = "none";
     }
 }
 
