@@ -310,6 +310,7 @@ function CreateRoom (socket, strPlayerName) {
     socket.emit ("m_CreateRoomSucc", strRoomCode);
 
     UpdatePlayersInRoom (strRoomCode);
+    console.log(strPlayerName + " Created Room: " + strRoomCode);
 }
 
 function JoinRoom (socket, strRoomCode, strPlayerName) {
